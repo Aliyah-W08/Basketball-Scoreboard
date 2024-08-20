@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P:regular" rel="stylesheet" />
+    <title>Basketball Score Counter</title>
+</head>
+
+<body>
+    <header>
+        <h1>BASKETBALL SCOREBOARD</h1>
+    </header>
+
+    <div class="line"></div>
+
+    <div class="container">
+        <div class="home">
+            <h3>HOME</h3>
+            <div class="scoreBox">
+                <p id="homescore"></p>
+            </div>
+            <button onclick="addOneHome()">+1</button>
+            <button onclick="addTwoHome()">+2</button>
+            <button onclick="addThreeHome()">+3</button>
+        </div>
+      
+        <div class="guest">
+            <h3>GUEST</h3>
+            <div class="scoreBox">
+                <p id="guestScore"></p>
+            </div>
+            <button onclick="addOneGuest()">+1</button>
+            <button onclick="addTwoGuest()">+2</button>
+            <button onclick="addThreeGuest()">+3</button>
+        </div>
+    </div>
+    <div class="line"></div>
+
+    <button id="newGame-btn" onclick="newGame()">New Game</button>
+    <button id="winner-btn" onclick="winner()">Winner</button>
+    <p id="winnerString"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
